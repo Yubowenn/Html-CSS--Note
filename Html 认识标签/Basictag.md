@@ -127,4 +127,17 @@
 ```
 
 
-###&#60;textarea&#62;&#60;/textarea&#62;标签
+### &#60;textarea&#62;&#60;/textarea&#62;标签
+* textarea中的内容是多行输入，输入的内容由属性来决定。
+* cols ：多行输入域的列数。
+* rows ：多行输入域的行数。
+* 在<textarea></textarea>标签之间可以输入默认值。
+举例：
+```html
+<form  method="post" action="save.php">
+        <label>联系我们</label>
+        <textarea cols="50" rows="10" >在这里输入内容...</textarea>
+</form>
+
+```
+
