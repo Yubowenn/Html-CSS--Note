@@ -116,8 +116,8 @@
 
 * &#60;form&#62;&#60;/form&#62;中添加的文字（没有存在子标签中的）会直接显示出来.这可以用来与输入框等组合在一起起到提示输入什么的作用。
 
-
-### 输入框
+### &#60;input... /&#62;标签
+#### 输入框
 * 输入框分为文本输入框和密码输入框，这可以由&#60;input.../&#62;&#60的属性来决定
 * 语法：
 ```html
@@ -127,8 +127,7 @@
 ```
 2018/10/11
 
-
-### 单选框和复选框
+#### 单选框和复选框
 * html中有两种选择框，radio和checkbox，与其他语言是一样的。
 * 语法：
 ```html
@@ -146,6 +145,23 @@
 <input type="radio" name="radioLove" value="不喜欢" />不喜欢
 <input type="radio" name="radioLove" value="无所谓" />无所谓
 ```
+
+#### 提交按钮
+* 提交按钮分为：提交和重置
+* 提交按钮：  
+语法：  
+```html
+<input type="submit" value="提交">
+```
+1.type：只有当type值设置为submit时，按钮才有提交作用  
+2.value：按钮上显示的文字
+* 重置按钮：  
+语法：  
+```html
+<input type="reset" value="重置">
+```
+1.type：只有当type值设置为reset时，按钮才有重置作用  
+2.value：按钮上显示的文字
 
 
 
@@ -178,7 +194,40 @@
       <option value="购物">购物</option>
 </select>
 ```
-* 在&#60;select&#62;标签中设置
+* 在&#60;select&#62;标签中设置属性```multiple="multiple"```就可以实现下拉框多选的操作  
+举例：
+```html
+<select multiple="multiple">
+      <option value="看书">看书</option>
+      <option value="旅游">旅游</option>
+      <option value="运动">运动</option>
+      <option value="购物">购物</option>
+</select>
+```
+在实际操作中，windows系统通过ctrl+单击（mac系统通过command+单机）来进行多选。
+
+
+### &#60;label...&#62;&#60;/label&#62;标签
+* label标签不会向用户呈现任何特殊效果，它的作用是为鼠标用户改进了可用性。如果你在 label 标签内点击文本，就会触发此控件。就是说，当用户单击选中该label标签时，浏览器就会自动将焦点转到和标签相关的表单控件上（就自动选中和该label标签相关连的表单控件上）。  
+比如说，“北京”对应了一个复选框，如果说要选中这个复选框，当label标签与该复选框关联的情况下。那么可以点击北京两个字这个标签，就能选中对应的复选框，当然也可以直接点击复选框。
+* 语法：  
+```html
+<label for="控件id名称">
+```
+举例：
+```html
+<label for="intrest">你对什么运动感兴趣</label>
+  <br />
+  <label for="jog">慢跑</label>
+  <input type="checkbox" name="intrest" id="jog" />
+  <br />
+  <label for="climb">登山</label>
+  <input type="checkbox" name="intrest" id="climb" />
+  <br />
+  <label for="basketball">篮球</label>
+  <input type="checkbox" name="intrest" id="basketball" />
+```
+注意label的控件id要与关联的表单控件的id相匹配
 
 
 
