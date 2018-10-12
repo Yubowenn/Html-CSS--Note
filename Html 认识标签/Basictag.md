@@ -127,6 +127,18 @@
 ```
 
 
+### 单选框和复选框
+* html中有两种选择框，radio和checkbox，与其他语言是一样的。
+* 语法：
+```html
+<input   type="radio/checkbox"   value="值"    name="名称"   checked="checked"/>
+```
+2、value：提交数据到服务器的值（后台程序PHP使用）
+
+3、name：为控件命名，以备后台程序 ASP、PHP 使用
+
+4、checked：当设置 checked="checked" 时，该选项被默认选中
+
 ### &#60;textarea&#62;&#60;/textarea&#62;标签
 * textarea中的内容是多行输入，输入的内容由属性来决定。
 * cols ：多行输入域的列数。
@@ -140,4 +152,6 @@
 </form>
 
 ```
+
+
 
