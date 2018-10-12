@@ -134,11 +134,20 @@
 ```html
 <input   type="radio/checkbox"   value="值"    name="名称"   checked="checked"/>
 ```
-2、value：提交数据到服务器的值（后台程序PHP使用）
+1、value：提交数据到服务器的值（后台程序PHP使用）
 
-3、name：为控件命名，以备后台程序 ASP、PHP 使用
+2、name：为控件命名，以备后台程序 ASP、PHP 使用
 
-4、checked：当设置 checked="checked" 时，该选项被默认选中
+3、checked：当设置 checked="checked" 时，该选项被默认选中
+* 注意:同一组的单选按钮，name 取值一定要一致
+举例：
+```html
+<input type="radio" name="radioLove" value="喜欢" checked="checked">喜欢
+<input type="radio" name="radioLove" value="不喜欢">不喜欢
+<input type="radio" name="radioLove" value="无所谓">无所谓
+```
+
+
 
 ### &#60;textarea&#62;&#60;/textarea&#62;标签
 * textarea中的内容是多行输入，输入的内容由属性来决定。
