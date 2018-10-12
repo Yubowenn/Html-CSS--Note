@@ -139,12 +139,12 @@
 2、name：为控件命名，以备后台程序 ASP、PHP 使用
 
 3、checked：当设置 checked="checked" 时，该选项被默认选中
-* 注意:同一组的单选按钮，name 取值一定要一致  
+* 注意:同一组的单选radio按钮，name 取值一定要一致  
 举例：
 ```html
-<input type="radio" name="radioLove" value="喜欢" checked="checked">喜欢
-<input type="radio" name="radioLove" value="不喜欢">不喜欢
-<input type="radio" name="radioLove" value="无所谓">无所谓
+<input type="radio" name="radioLove" value="喜欢" checked="checked" />喜欢
+<input type="radio" name="radioLove" value="不喜欢" />不喜欢
+<input type="radio" name="radioLove" value="无所谓" />无所谓
 ```
 
 
@@ -160,8 +160,25 @@
         <label>联系我们</label>
         <textarea cols="50" rows="10" >在这里输入内容...</textarea>
 </form>
-
 ```
+
+
+### &#60;select&#62;标签
+* 该标签作为下拉列表框来使用，内部需要嵌套&#60;option value='提交值'&#62;选项值&#60;/option&#62;  
+说明：  
+1.value：向服务器提交的值。  
+2.选项值：显示的值  
+3.selected="selected"属性默认该选项被选中。  
+举例：
+```html
+<select>
+      <option value="看书">看书</option>
+      <option value="旅游" selected="selected">旅游</option>
+      <option value="运动">运动</option>
+      <option value="购物">购物</option>
+</select>
+```
+* 在&#60;select&#62;标签中设置
 
 
 
