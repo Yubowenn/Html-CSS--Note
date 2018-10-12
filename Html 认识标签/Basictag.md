@@ -139,7 +139,7 @@
 2、name：为控件命名，以备后台程序 ASP、PHP 使用
 
 3、checked：当设置 checked="checked" 时，该选项被默认选中
-* 注意:同一组的单选按钮，name 取值一定要一致
+* 注意:同一组的单选按钮，name 取值一定要一致  
 举例：
 ```html
 <input type="radio" name="radioLove" value="喜欢" checked="checked">喜欢
