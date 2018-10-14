@@ -116,3 +116,36 @@ color:green;
 ```html
 .food>li>ul>li{border:1px solid red;}
 ```
+
+
+## 包含选择器
+* 加入空格,用于选择指定标签元素下的后辈元素。  
+举例：
+```html
+.first  span{color:red;}
+```
+* 包含选择器与子选择器的区别：
+1. 子选择器（child selector）仅是指它的直接后代，或者你可以理解为作用于子元素的第一代后代。而后代选择器是作用于所有子后代元素。
+2. 后代选择器通过空格来进行选择，而子选择器是通过“>”进行选择。即，>作用于元素的第一代后代，空格作用于元素的所有后代。  
+举例（这不是完整代码）：
+```html
+.food li{border:1px solid red;}
+
+<ul class="food">
+    <li>水果
+        <ul>
+        	<li>香蕉</li>
+            <li>苹果</li>
+            <li>梨</li>
+        </ul>
+    </li>
+    <li>蔬菜
+    	<ul>
+        	<li>白菜</li>
+            <li>油菜</li>
+            <li>卷心菜</li>
+        </ul>
+    </li>
+</ul>
+```
+同样举上面自选择器的例子，将.food>li改为.food li。那么结果是每一个li标记起来的元素都会加上红色方框
