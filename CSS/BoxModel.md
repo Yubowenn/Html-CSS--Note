@@ -61,3 +61,24 @@ a{
 <a>4</a>
 </body>
 ```
+
+
+## 盒模型
+### 边框(1)
+* 边框就是围绕着内容及补白的线，这条线你可以设置它的粗细、样式和颜色(边框三个属性)
+* 分类：
+1. border-style（边框样式）常见样式有：dashed（虚线）| dotted（点线）| solid（实线）
+2. border-color（边框颜色）中的颜色可设置为十六进制颜色
+3. border-width（边框宽度）中的宽度也可以设置为：thin | medium | thick（但不是很常用），最常还是用象素（px）  
+举例：
+```html
+div{
+    border-width:2px;
+    border-style:solid;
+    border-color:#888;
+}
+```
+
+
+### 边框(2)
+* 单独设置下边框，而其它三边都不设置边框，并且css 样式中允许只为一个方向的边框设置样式
