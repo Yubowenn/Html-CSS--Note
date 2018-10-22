@@ -81,4 +81,28 @@ div{
 
 
 ### 边框(2)
-* 单独设置下边框，而其它三边都不设置边框，并且css 样式中允许只为一个方向的边框设置样式
+* 单独设置下边框，而其它三边都不设置边框，并且css 样式中允许只为一个方向的边框设置样式  
+举例：
+```html
+div{
+    border-top:1px solid red;
+    border-bottom:1px solid red;
+    border-right:1px solid red; 
+    border-left:1px solid red;
+}
+```
+
+
+### 宽度和高度
+* css内定义的宽（width）和高（height），指的是填充以里的内容范围
+* 一个元素实际宽度（盒子的宽度）=左边界+左边框+左填充+内容宽度+右填充+右边框+右边界。
+* 高度同理
+* 举例：
+```html
+div{
+    width:200px;
+    padding:20px;//填充
+    border:1px solid red;//边框
+    margin:10px;    //边界
+}
+```
