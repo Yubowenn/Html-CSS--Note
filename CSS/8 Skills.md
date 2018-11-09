@@ -2,7 +2,7 @@
 
 ## 水平居中设置
 ### 行内元素
-* 水平居中是通过给父元素设置 text-align:center 来实现的
+* 水平居中是通过给父元素设置 ```text-align:center``` 来实现的
 * 举例：  
 html代码：
 ```html
