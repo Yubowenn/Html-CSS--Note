@@ -46,7 +46,7 @@ div{
 * 不定宽度的块状元素有三种方法居中（这三种方法目前使用的都很多）：  
 1. 加入 table 标签
 * 利用table标签的长度自适应性--即不定义其长度也不默认父元素body的长度（table其长度根据其内文本长度决定）。因此可以看做一个定宽度块元素，然后再利用定宽度块状居中的margin的方法，使其水平居中。
-* 第一步：为需要设置的居中的元素外面加入一个 table 标签 ( 包括 <tbody>、<tr>、<td> )。
+* 第一步：为需要设置的居中的元素外面加入一个 table 标签 ( 包括 &#60;tbody&#62;、&#60;tr&#62;、&#60;td&#62; )。
 * 第二步：为这个 table 设置“左右 margin 居中”（这个和定宽块状元素的方法一样）。
 举例：  
 html代码：
@@ -128,7 +128,7 @@ css代码：
 ```
 3. 设置 position:relative 和 left:50%：利用 相对定位 的方式，将元素向左偏移 50% ，即达到居中的目的
 * 我们可以这样理解：假想ul层的父层（即下面例子中的div层）中间有条平分线将ul层的父层（div层）平均分为两份，ul层的css代码是将ul层的最左端与ul层的父层（div层）的平分线对齐；而li层的css代码则是将li层的平分线与ul层的最左端（也是div层的平分线）对齐，从而实现li层的居中。
-* 举例：
+* 举例：  
 html代码
 ```html
 <body>
@@ -168,7 +168,7 @@ css代码：
 * 通过设置父元素的 height 和 line-height 高度一致来实现的。(height: 该元素的高度，line-height: 顾名思义，行高（行间距），指在文本中，行与行之间的 基线间的距离 )。  
 line-height 与 font-size 的计算值之差，在 CSS 中成为“行间距”。分为两半，分别加到一个文本行内容的顶部和底部。  
 这种文字行高与块高一致带来了一个弊端：当文字内容的长度大于块的宽时，就有内容脱离了块。
-* 举例：
+* 举例：  
 html代码：
 ```html
 <div class="wrap">
@@ -190,7 +190,7 @@ css代码：
 * 父元素高度确定的多行文本、图片等的竖直居中的方法有两种：  
 1. 使用插入 table  (包括tbody、tr、td)标签，同时设置 vertical-align：middle。  
 css 中有一个用于竖直居中的属性 vertical-align，在父元素设置此样式时，会对inline-block类型的子元素都有用。  
-举例：
+举例：  
 html代码：
 ```html
 <body>
@@ -207,7 +207,7 @@ table td{height:500px;background:#ccc}
 ```
 这里，td 标签默认情况下就默认设置了 vertical-align 为 middle。并且会给所有带有td标签的多行文字和图片设置垂直居中。因此该css代码也可以写作：```.wrap{height:500px;background:#ccc}```
 2. 在 chrome、firefox 及 IE8 以上的浏览器下可以设置块级元素的 display 为 table-cell（设置为表格单元显示），激活 vertical-align 属性，但注意 IE6、7 并不支持这个样式, 兼容性比较差。  
-举例：
+举例：  
 html代码：
 ```html
 <div class="container">
